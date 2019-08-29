@@ -1,7 +1,13 @@
-oracion = input("Escriba una oracion: ")
-palabra = input("Escriba la palabra a buscar: ")
+entrada = input("Introduzca una cadena: ")
+
+contador = {}
+
+palabras = entrada.split()
+for palabra in palabras:
+    if palabra not in contador:
+        contador[palabra] = 1
+    else:
+        contador[palabra] += 1
 
 
-print(oracion.count(palabra))
-
-
+print(contador)
