@@ -2,7 +2,7 @@ key_long = 26
 
 def getkey():
     key = 0
-    print("Ingresa la llave, debe ser menor o  igual que 26")
+    print("Ingresa la llave: ")
     key = int(input())
     if (key > 1 and key <= key_long):
         return key
